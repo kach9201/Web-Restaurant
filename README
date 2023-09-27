@@ -12,13 +12,14 @@ Contributing
 License
 Prerequisites
 Before you begin, ensure you have met the following requirements:
-
 Node.js and npm installed on your machine.
+
 Getting Started
+
 Installation
 Clone this repository to your local machine:
+git clone https://github.com/kach9201/Web-Restaurant.git
 
-git clone https://github.com/kach9201/restaurant-menu-graphql-api.git
 Navigate to the project directory:
 cd restaurant-menu-graphql-api
 
@@ -29,11 +30,15 @@ Running the API
 To run the GraphQL API locally, follow these steps:
 
 Start the server:
-
-npm start
+node app.js
 The API will be accessible at http://localhost:4000/graphql.
-
 Open your web browser and navigate to http://localhost:4000/graphql to access the GraphiQL IDE for testing GraphQL queries.
+
+API Schema
+The GraphQL schema defines the available queries:
+
+allMenuItems: Retrieves all menu items.
+menuItemsByCategory: Retrieves menu items by category.
 
 GraphQL Queries
 You can use the GraphQL API to retrieve restaurant menu items based on different categories. Here are some sample queries:
