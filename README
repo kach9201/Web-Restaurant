@@ -20,15 +20,11 @@ Installation
 Clone this repository to your local machine:
 git clone https://github.com/kach9201/Web-Restaurant.git
 
-Navigate to the project directory:
-cd restaurant-menu-graphql-api
-
 Install the project dependencies:
 npm install
 
 Running the API
 To run the GraphQL API locally, follow these steps:
-
 Start the server:
 node app.js
 The API will be accessible at http://localhost:4000/graphql.
