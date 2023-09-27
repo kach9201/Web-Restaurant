@@ -20,9 +20,8 @@ Clone this repository to your local machine:
 
 git clone https://github.com/kach9201/restaurant-menu-graphql-api.git
 Navigate to the project directory:
-
-
 cd restaurant-menu-graphql-api
+
 Install the project dependencies:
 npm install
 
@@ -31,8 +30,6 @@ To run the GraphQL API locally, follow these steps:
 
 Start the server:
 
-bash
-Copy code
 npm start
 The API will be accessible at http://localhost:4000/graphql.
 
@@ -44,37 +41,32 @@ You can use the GraphQL API to retrieve restaurant menu items based on different
 Query for Menu Items by Category
 To retrieve menu items by category, use the following query:
 
-graphql
-Copy code
 {
-  menuItemsByCategory(category: "Main Course") {
+  menuItemsByCategory(category: "APPETIZERS") {
     id
     name
     description
     price
   }
 }
-Replace "Main Course" with the desired category.
+Replace "APPETIZERS" with the desired category, like ENTREES, SANDWICHES, COLD, HOT, SOUP&SALAD COMBOS, FAJITAS, TACOS, ENCHILADAS, QUICHE, GREEN SALADS.
 
 Query for All Menu Items
 To retrieve all menu items, use the following query:
 
-graphql
-Copy code
 {
-  menuItems {
+  allMenuItems {
     id
     name
     category
     price
   }
 }
+
 Testing
 Automated tests are included in this project to ensure the functionality of the GraphQL API. To run the tests, use the following command:
-
-bash
-Copy code
 npm test
+
 Contributing
 Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
 
@@ -83,5 +75,6 @@ Create a new branch for your feature or bug fix.
 Make your changes and commit them with descriptive messages.
 Push your changes to your fork.
 Submit a pull request to the main repository.
+
 License
 This project is licensed under the MIT License.
