@@ -1,0 +1,87 @@
+Restaurant Menu GraphQL API
+This GraphQL API provides data for a restaurant menu application. It allows you to query various menu items and their details based on different categories.
+
+Table of Contents
+Prerequisites
+Getting Started
+Installation
+Running the API
+GraphQL Queries
+Testing
+Contributing
+License
+Prerequisites
+Before you begin, ensure you have met the following requirements:
+
+Node.js and npm installed on your machine.
+Getting Started
+Installation
+Clone this repository to your local machine:
+
+git clone https://github.com/kach9201/restaurant-menu-graphql-api.git
+Navigate to the project directory:
+
+
+cd restaurant-menu-graphql-api
+Install the project dependencies:
+npm install
+
+Running the API
+To run the GraphQL API locally, follow these steps:
+
+Start the server:
+
+bash
+Copy code
+npm start
+The API will be accessible at http://localhost:4000/graphql.
+
+Open your web browser and navigate to http://localhost:4000/graphql to access the GraphiQL IDE for testing GraphQL queries.
+
+GraphQL Queries
+You can use the GraphQL API to retrieve restaurant menu items based on different categories. Here are some sample queries:
+
+Query for Menu Items by Category
+To retrieve menu items by category, use the following query:
+
+graphql
+Copy code
+{
+  menuItemsByCategory(category: "Main Course") {
+    id
+    name
+    description
+    price
+  }
+}
+Replace "Main Course" with the desired category.
+
+Query for All Menu Items
+To retrieve all menu items, use the following query:
+
+graphql
+Copy code
+{
+  menuItems {
+    id
+    name
+    category
+    price
+  }
+}
+Testing
+Automated tests are included in this project to ensure the functionality of the GraphQL API. To run the tests, use the following command:
+
+bash
+Copy code
+npm test
+Contributing
+Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
+
+Fork the repository on GitHub.
+Create a new branch for your feature or bug fix.
+Make your changes and commit them with descriptive messages.
+Push your changes to your fork.
+Submit a pull request to the main repository.
+License
+This project is licensed under the MIT License.
